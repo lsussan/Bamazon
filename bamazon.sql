@@ -23,4 +23,4 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 			('Magic Johnson Autographed Basketball', 'memorabilia', 999.99, 2),
 			('Arcade Fire Funeral LP', 'music', 29.99, 50);
             
-    
+ 

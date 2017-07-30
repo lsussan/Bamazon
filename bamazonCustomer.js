@@ -69,7 +69,7 @@ connection.connect(function(err) {
                 if (isNaN(value) === false) {
                     return true;
                 } else {
-                    console.log("\nPlease enter a valid quantity\n");
+                    console.log("\nPlease enter a quantity\n");
                     return false;
                 }
             }
@@ -82,7 +82,7 @@ connection.connect(function(err) {
 
                 //Checks if sufficient quantity exists
                 if (data[0].stock_quantity < itemInv) {
-                    console.log("We're sorry, that product is currently out of stock\n");
+                    console.log("Insufficient Quantity!\n");
                     console.log("Please choose another product\n");
                     start();
                 } else {
