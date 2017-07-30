@@ -2,6 +2,7 @@
 var inquirer = require('inquirer');
 var mysql = require('mysql');
 var Table = require('cli-table2');
+const chalk = require('chalk');
 
 //sql connection
 var connection = mysql.createConnection({
@@ -52,7 +53,7 @@ connection.connect(function(err) {
                 if (isNaN(value) === false) {
                     return true;
                 } else {
-                    console.log("\nPlease enter only the item ID of the item you'd like to buy\n");
+                    console.log(chalk.blue.bgRed.bold("\nPlease enter only the item ID of the item you'd like to buy\n"));
                     return false;
                 }
             }

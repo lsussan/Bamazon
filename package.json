@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lsussan/Bamazon#readme",
   "dependencies": {
+    "chalk": "^2.0.1",
     "cli-table": "^0.3.1",
     "cli-table2": "^0.2.0",
     "inquirer": "^3.2.1",
